@@ -1,0 +1,166 @@
+#logo {
+	vertical-align:middle;
+}
+.navbar-brand span {
+	font-size:2rem;
+	line-height:1.2;
+	font-weight: 200;
+	display:inline-block;
+	vertical-align:middle;
+	padding:0 0 0 15px;
+}
+.navbar-brand b {
+	display:block;
+	font-size:50%;
+	line-height:1;
+}
+.navbar{
+  background-color: rgb(26, 26, 26);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 9999;
+  overflow: hidden;
+  box-shadow: .5px 2px 2px rgb(10, 10, 10);
+}
+.navbar-nav {
+  margin-left:auto;
+}
+
+.fixed-bg {
+    background-image: url("../img/wallpaper-1.png");
+    min-height: 950px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .fixed-bg-1 {
+    background-image: url("../img/education-desktop.png");
+    min-height: 650px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  section {
+      padding: 60px 0;
+  }
+  
+  section .section-title {
+      text-align: center;
+      color: #1b1b1b;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+  }
+  #footer {
+      background: #161616 !important;
+  }
+  #footer h5{
+      padding-left: 2px;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color:#5874cf;
+  }
+  #footer a {
+      color: #ffffff;
+      text-decoration: none !important;
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects;
+  }
+ 
+  #footer ul.quick-links li{
+      padding: 3px 0;
+      -webkit-transition: .5s all ease;
+      -moz-transition: .5s all ease;
+      transition: .5s all ease;
+  }
+  #footer ul.quick-links li:hover{
+      padding: 3px 0;
+      margin-left:5px;
+      font-weight:700;
+  }
+  #footer ul.quick-links li a i{
+      margin-right: 5px;
+  }
+  #footer ul.quick-links li:hover a i {
+      font-weight: 700;
+  }
+  
+  @media (max-width:767px){
+      #footer h5 {
+      padding-left: 0;
+      padding-bottom: 0px;
+      margin-bottom: 10px;
+  }
+  }
+
+.iphone1{
+    max-height: 500px;
+    max-width: auto;
+    height: auto;
+    width: auto;
+
+
+}
+
+.span4 img {
+    margin-right: 10px;
+}
+.span4 .img-left {
+    float: left;
+}
+.span4 .img-right {
+    float: right;
+}
+
+@media (min-width:1200px){
+    .fixed-bg {
+        background-image: url("../img/wide-desktop.png");
+        min-height: 950px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .fixed-bg-1 {
+        background-image: url("../img/education-desktop.png");
+        min-height: 950px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+}
+@media (max-width:955px){
+    .fixed-bg {
+        background-image: url("../img/bg1-mobile.png");
+        min-height: 950px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .fixed-bg-1 {
+        background-image: url("../img/education-ipad.png");
+        min-height: 950px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    @media (max-width:550px){  
+        .fixed-bg-1 {
+        background-image: url("../img/education-small.png");
+        min-height: 950px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
