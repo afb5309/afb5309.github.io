@@ -1,0 +1,143 @@
+/*    */
+body {
+    background: black;
+}
+
+.container{
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.jumbotron {
+    background: url(../images/splash_bg.jpg) center no-repeat;
+    height: 300px;
+    background-size: cover;
+    margin-bottom: 0px;
+}
+
+.heading {
+	color: white;
+	text-align: center;
+	letter-spacing: 10px;
+    margin-top: 45px;
+	font-family: 'Lora', sans-serif;
+}
+
+.cloudBlack {
+    background-color: black;
+}
+#weather-img{
+    width: 35%;
+    position: relative;
+    padding-top:18px;
+}
+
+/* Top right corner search button  */
+.btn-outline{
+    color: #ffffff;
+    border-color: black;
+    border-radius: 50px;
+}
+
+
+.btn-outline:active{
+    background-color: #000000;
+}
+
+.btn-outline:hover{
+    color: rgb(0, 174, 255);
+    border-color: rgb(0, 0, 0);
+    background-color: #000000;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+.card{
+    background-color: black;
+    text-align: center;
+    padding:0px;
+    color: white;    
+}
+
+.clothing-div {
+    max-width: 350px;
+}
+
+#outside-img {
+padding-top: 0px
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 9999;
+  }
+/* Image banner style */
+
+.banner{
+    position: absolute;
+    bottom: -17px;
+    margin-left: -20px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%; 
+    text-align: center;
+    color: white;
+    height: 50px;
+}
+
+.temp{
+    padding: 0 20px;
+}
+
+.temp:first-child{
+    border-right: 1px solid white;
+}
+
+/* Footer style  */
+.footer{
+    width: 100%;
+    /* height: 80px;
+    color: white;
+    text-align: center; */
+    /* margin-top: 100px;
+    background-color: rgb(20, 20, 20); */
+}
+
+.footer p{
+    margin-bottom: 0px;
+    color: #ffffff;
+    background-color: rgb(7, 7, 7);
+    box-shadow: 0px -2px 8px #35353580;
+    height: 64px;
+}
+
+
+
+/* small devices */
+
+@media (max-width: 651px) {
+    .navbar{
+        padding-left: 30%;
+    }
+
+    .form-inline{
+        margin-left: -25px;
+    }
+    #outside-img {
+        padding-top: 20px
+        }
+}
+
+@media (max-width: 575px) {
+    #id{
+        margin-left: 50px !important;
+    }
+}
+
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Trivia Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="soccer.js"></script>
+  <link rel="stylesheet" type="text/css" href="soccer.css" />
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+
+  <!-- Opening Screen -->
+<body class="text-center">
+  <h1 class="title text-white mt-5" style="font-family: 'Luckiest Guy', cursive;">Totally Tekkers Trivia!</h1>
+    <p class="button mt-5 2 pb-0 mx-auto btn btn-lg" id="begin">Start</p>
+      
+  <!-- Start Questionairre -->
+  <div class="col-lg-4 col-lg-offset-4 text-center mx-auto">
+     <p id="timer">Time Remaining<span id="timer"></span></p>
+  </div>
+
+  <div class="text-center answer">
+    <p class="line">1. Which professional soccer player has scored the most goals for club and country?</p>
+    <form class="question">
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Messi
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="correct"> Ronaldo
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Neymar
+      </legend>
+    </form>
+
+    <p class="line">2. What national team won the World Cup in 2018?</p>
+    <form class="question">
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Germany
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Spain
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="correct"> France
+      </legend>
+    </form>
+
+    <p class="line">3. Who holds the record for most career goals in the English Premier League?</p>
+    <form class="question">
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="correct"> Alan Shearer
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Wayne Rooney
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Sergio Aguero
+      </legend>
+    </form>
+
+    <p class="line">4. Arsenal is located in the city of:</p>
+    <form class="question">
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Leeds
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Oxford
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="correct"> London
+      </legend>
+    </form>
+
+    <p class="line">5. What country is the host of the 2022 World Cup?</p>
+    <form class="question">
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="correct"> Quatar
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Russia
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Brazil
+      </legend>
+    </form>
+
+    <p class="line">6. What is the most prestigious trophy in European club 'football'?</p>
+    <form class="question">
+      <legend class="form-check">
+        <input type="radio" name="optradio pl" class="optradio" value="wrong"> EUFA Europa League
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="correct"> EUFA Champions League
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> FIFA Club World Cup
+      </legend>
+    </form>
+
+    <p class="line">7. In 2018, Christiano Ronaldo made a shock move to which European soccer club?</p>
+    <form class="question">
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Manchester United
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="correct"> Juventus
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Real Madrid
+      </legend>
+    </form>
+
+    <p class="line">8. Paris Saint Germain plays in which division of international soccer?</p>
+    <form class="question">
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Serie A
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> La Liga
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="correct"> League 1
+      </legend>
+    </form>
+
+    <p class="line mr-25% ml-25%">9. What club is currently playing in the English 'Championship'?</p>
+    <form class="question">
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Fulham
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="correct"> Hull City
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Wolverhampton
+      </legend>
+    </form>
+
+    <p class="line">10. What English team holds the record for most Premier League titles?</p>
+    <form class="question">
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Chelsea
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="wrong"> Liverpool
+      </legend>
+      <legend class="form-check">
+        <input type="radio" name="optradio" class="optradio" value="correct"> Manchester United
+      </legend>
+    </form>
+
+    <div>
+      <p class="lead btn-danger btn btn-lg pb-0" id="finish">Finished
+      </p>
+    </div>
+
+  </div>
+  </p>
+  </div>
+  <div class="results">
+    <p class="result" id="summary">Finished!</p>
+    <p class="result" id="correct"></p>
+    <p class="result" id="incorrect"></p>
+    <p class="result" id="unanswered"></p>
+  </div>
+
+</body>
+
+</html>

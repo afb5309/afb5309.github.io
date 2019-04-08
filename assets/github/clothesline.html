@@ -1,0 +1,209 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="c.png">
+    <title>Clothesline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="clothesline/css/main.css">
+    <link rel="stylesheet" type="text/css" href="clothesline/css/style.css">
+    
+</head>
+
+<body class="align-center mx-auto">
+
+    <!-- top row for logo & search area -->
+    <nav class="navbar navbar-light bg-black" style="background-color:black; position: sticky;">
+        <a class="navbar-brand" href="#">
+            <img src="./clothesline/images/clothesline.png" alt="logo">
+        </a>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" id="search" placeholder="City" aria-label="Search">
+            <select class="btn mr-0 ml-1" id="state" style="height: 38px; background-color: white; color: black;">
+                <option value="">State</option>
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AR">AR</option>
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DC">DC</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="IA">IA</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="MA">MA</option>
+                <option value="MD">MD</option>
+                <option value="ME">ME</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MO">MO</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="NC">NC</option>
+                <option value="NE">NE</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NV">NV</option>
+                <option value="NY">NY</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WI">WI</option>
+                <option value="WV">WV</option>
+                <option value="WY">WY</option>
+            </select>
+
+            <button class="btn btn-outline my-2 my-sm-0" id="submit-button" type="submit"> <i class="fas fa-search-location"></i></button>
+
+
+        </form>
+    </nav>
+    <!-- Banner -->
+    <div class="jumbotron">
+
+        <!-- Banner Sub-Title -->
+        <h1 class="heading" id="city" class="mx-auto text-center">
+            <i class="fas fa-map-marker-alt"></i></h1>
+    </div>
+
+    </br></br>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <div class="card text-white" style="background-color: black; border-color: white;">
+                    <div class="row">
+                        <div class="col-md-12 pt-3">
+                            <h3>Today's Forecast <a href="https://www.weatherbug.com/" target="_blank" style="color:white;"><i class="fas fa-arrow-circle-right"></i></a></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="card-img-top cloudBlack" id="weather-img" src="clothesline/images/dailyweather.jpeg" alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text" id="current-temp"></p>
+                        <p class="card-text" id="description"></p>
+                        <p class="card-text">
+                            <span id="high" class="temp"></span>
+                            <span id="low" class="temp"></span>
+                        </p>
+                        <!-- <p class="card-text" id="low"></p> -->
+                        <p class="card-text" id="pop"></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 d-sm-none d-md-block text-center">
+                <div class="card text-white" style="background-color: black;">
+                    <img class="card-img-top" id="outside-img" src="clothesline/images/blank-black.jpg" alt="Card image cap">
+                </div>
+            </div>
+
+        </div>
+
+        </br></br>
+
+        <div class="row">
+            <h3 style="color:white;">Clothing Reccomendations</h3>
+        </div>
+        <div class="row">
+            <div class="card-deck" id="card-row-1">
+            </div>
+            <div class="row">
+                
+                <div class="card-deck" id="card-row-2">
+                        
+                </div>
+        </div>
+
+
+
+        <div class="container text-center my-3" id="etsyResults">
+                <h3 style="color:white; text-align: left; padding-bottom: 25px;">Etsy Results</h3>
+                <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                    <div class="carousel-inner w-100" role="listbox">
+                        <div class="carousel-item row no-gutters active" id="img1">
+                            
+                           
+                        </div>
+                        <div class="carousel-item row no-gutters" id="img2">
+                          
+                        </div>
+                        <div class="carousel-item row no-gutters" id="img3">
+                               
+                            </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            
+            </div>
+
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="footer text-center m-0">
+        <p class="pt-3">Copyright</p>
+    </div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="clothesline/javascript/java1.js"></script>
+    <!-- <script src="clothesline/javascript/js2.js"></script> -->
+    <script src="clothesline/javascript/code.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+    
+</body>
+
+
+
+</html>

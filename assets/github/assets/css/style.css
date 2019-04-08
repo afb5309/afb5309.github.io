@@ -1,0 +1,76 @@
+body {
+	background: black;
+}
+
+.container {
+	width: 80%;
+	position: absolute;
+	top: 580px;
+	left: 10%;
+	padding-bottom: 90px;
+}
+
+.jumbotron {
+	background: url(../images/barrels.jpg) center center no-repeat;
+	height: 400px;
+	background-size: cover;
+}
+
+.individual-gifs {
+	float: left;
+	margin: 10px;
+}
+
+.intro {
+	display: block;
+	background: rgb(15, 15, 15);
+	color: white;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	letter-spacing: 1.5px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 400px;
+	padding: 30px;
+}
+
+.input-label {
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+}
+
+#title {
+	color: white;
+	text-align: center;
+	letter-spacing: 10px;
+	margin-top: 7%;
+	font-family: 'Lora', sans-serif;
+}
+
+#title-description {
+	color: white;
+	text-align: center;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+}
+
+#gif-buttons {
+	width: 100%;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+
+.rating-text {
+	font-size: 15px;
+	color: rgb(255, 255, 255);
+}
+
+.btn {
+	margin: 5px;
+
+}

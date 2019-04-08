@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Train Scheduler</title>
+
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	    <div class="jumbotron">
+          <p class="mx-auto text-center h1 text-light" style="font-size:80px;">Train Schedule</p>
+          <p class="pHeader text-center text-light" style="font-size:30px;">Find out if your train is close by!</p>
+		</div>
+		
+	<div class="background">
+		<div class="container">
+		<div class="align-center mr-5 ml-5 list-group list-group-flush">
+		  <div class="text-center pb-4 mb-1 h5">Current Train Schedule</div>
+		  <div class="panel-body">
+			<table class="table" id="trainScheduleTable">
+				  <thead class="table text-white" style="background-color: black;">
+					<tr>
+					  <th>Train Name</th>
+					  <th>Destination</th>
+					  <th>Frequency (min)</th>
+					  <th>Next Arrival</th>
+					  <th>Minutes Away</th>
+					</tr>
+				  </thead>
+				  <tbody>
+				  </tbody>
+			</table>
+		</div>
+		</div>
+		</div>
+		
+		<div class="container">
+			<div class="card mr-5 ml-5 text-center pb-3 pt-3 mt-5 mb-3 h5 text-white" style="background-color: black;">Add Train</div>
+			
+			<div class="panel-body">
+				<div class="form">
+					<form>
+					  <div class="mr-5 ml-5  form-group">
+						<label for="nameTrain">Train Name</label>
+						<input type="text" class="form-control" id="nameTrain">
+					  </div>
+					  <div class="mr-5 ml-5  form-group">
+						<label for="finalDestination">Destination</label>
+						<input type="text" class="form-control" id="finalDestination">
+					  </div>
+					  <div class="mr-5 ml-5  form-group">
+						<label for="firstTrain">First Train Time (HH:mm - Military Time)</label>
+						<input type="text" class="form-control" id="timeFirstTrain">
+					  </div>
+					  <div class="mr-5 ml-5 form-group">
+						<label for="frequency">Frequency (min)</label>
+						<input type="text" class="form-control" id="minFrequency">
+					  </div>
+					  <button type="button" class="row-2 mb-5 mr-5 ml-5 btn btn-primary float-left" id="click-button">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+
+	<script src="logic.js"></script>
+</body>
+</html>
+

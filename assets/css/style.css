@@ -21,12 +21,21 @@
   width: 100%; /* Full width */
   z-index: 9999;
   overflow: hidden;
-  box-shadow: .5px 2px 2px rgb(10, 10, 10);
+  box-shadow: .5px 2px 1px rgb(10, 10, 10);
 }
 .navbar-nav {
   margin-left:auto;
 }
 
+.centered {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white !important;
+    text-shadow: 2px 2px 2px #0000006c;
+  }
+  
 .fixed-bg {
     background-image: url("../img/wallpaper-1.png");
     min-height: 950px;
@@ -43,7 +52,62 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-
+  .fixed-bg-2 {
+    background-image: url("../img/Wallpaper.png");
+    min-height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .portfolio-bg {
+    background-image: url("../img/Wallpaper.png");
+    min-height: 950px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .contact-info .fa {
+    padding-right: 5px;
+  }
+  
+  #contact .form-control {
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    border-radius: 10px;
+    box-shadow: none;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  #contact .form-control:focus {
+    border-bottom-color: #999999;
+  }
+  
+  #contact input {
+    height: 55px;
+  }
+  
+  #contact button#submit {
+    background: #2b2b2b;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    border-radius: 50px;
+    min-width: 150px;
+    color: #ffffff;
+    margin-top: 24px;
+  }
+  
+  #contact button#submit:hover {
+    background: #07c2fc;
+    color: #ffffff;
+  }
   
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   section {
@@ -98,24 +162,29 @@
   }
   }
 
+  .text1{
+      margin-top: 100px;
+  }
+  
+  .text2{
+    margin-top: 50px;
+  }
+
+.firstGroup{
+    margin-top: 50px;
+}
 .iphone1{
-    max-height: 500px;
-    max-width: auto;
-    height: auto;
+    height: 400px;
     width: auto;
-
-
+    padding-bottom: 50px;
 }
 
-.span4 img {
-    margin-right: 10px;
+.macbook{
+    height: 400px;
+    width: auto;
+    padding-bottom: 50px;
 }
-.span4 .img-left {
-    float: left;
-}
-.span4 .img-right {
-    float: right;
-}
+
 
 @media (min-width:1200px){
     .fixed-bg {
@@ -135,7 +204,7 @@
         background-size: cover;
       }
 }
-@media (max-width:955px){
+@media (max-width:995px){
     .fixed-bg {
         background-image: url("../img/bg1-mobile.png");
         min-height: 950px;
@@ -152,6 +221,15 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+      .macbook{
+        height: 300px;
+        width: auto;
+        padding-bottom: 50px;
+    }
+      .text1{
+        margin-top: 3px;
+        margin-bottom: 50px
+    }
     }
 
     @media (max-width:550px){  
@@ -163,4 +241,11 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
+      .macbook{
+        height: 220px;
+        width: auto;
+        padding-bottom: 50px;
+        position:relative;
+        justify-content: center;
+    }
     }

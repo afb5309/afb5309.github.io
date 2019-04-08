@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comedian Gify</title>
+
+	<!-- Bootstrap Links -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!-- CSS Links -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<!-- GOOGLE FONT LINKS -->
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+
+</head>
+<body class="align-center mx-auto">
+	<!-- Banner -->
+	<div class="jumbotron">
+		<!-- Banner Title -->
+	  <h1 id="title">Funniest People | Gif Gallery</h1>
+		<!-- Banner Sub-Title -->
+	  <p id="title-description">A selection of the best comedians!</p>
+	</div>
+	
+	<!-- Page break / Instructions -->
+	<p class="intro">Click on the gif of your favorite comedian or search for your own.</p>
+	
+	
+	<!-- container for below page content-->
+	<div class="container mx-auto text-center">
+
+	<!-- Comedian buttons (ie. Jim Carey, Nick Kroll...) -->
+	<div id="gif-buttons"></div>
+
+	<!-- Search Box -->
+	<br />
+	<label for="search-input" class="input-label">Search: </label>
+	<input type="text" id="search-input">
+	<input id="add-gif" type="submit" value="Submit">
+	<br>
+
+	<!-- gif API search results -->
+	<div class="row gif-row">
+	  	<div class="span4">
+	  		<div id="gifs"></div>
+	  	</div>
+	</div>
+	
+	<!-- ending <body> container below </div> -->
+	</div>
+	
+	<!-- JQUERY Link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Javascript Link -->
+	<script src="assets/javascript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("background copy.jpg");
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-bottom: solid;
+  border-width: 2.46px;
+  border-color: rgb(209, 209, 209);
+  list-style: none;
+  position:fixed;
+  top:0px;
+  z-index: 1;
+}
+
+.container {
+  height: 70px;
+  padding-top:30px;
+  padding-right:50px;
+  padding-left:47px;
+  top: 0;
+  display: inline-block;
+  background-color: #49AAA5;
+  margin-left: 15%;
+  color: white;
+  font-size: 30px;
+}
+
+ul {
+  margin-right: 100px;
+
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  float: right;
+  line-height: 100px;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: arial;
+  color: gray;
+  padding: 0 20px;
+}
+
+div{
+  color: rgba(190, 190, 190, 0.349);
+  font-size: 25px;
+  opacity: 20%;
+  font-style: thin;
+}
+
+ul li a:hover {
+  color: rgb(17, 180, 230);
+}
+
+.box-set {
+  height:100%;
+  width:100%;
+}
+.box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:155px;
+  padding-bottom:40px;
+  width: 65%;
+  /* height: 500px; */
+  background-color: white;
+  color:#49AAA5;
+  clear: both;
+  padding:30px;
+  padding-bottom:60px;
+  padding-top: 40px;
+  margin-bottom: 3.8%;
+}
+
+p {
+  font-size:35px;
+  
+}
+
+hr{
+  border:solid;
+  color: silver;
+  width:auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+}
+
+.headshot
+{
+  float:left;
+  margin-right: 10px;
+  padding-left:15px;
+  margin-top: -25px;
+  padding-top:40px;
+  padding-right: 35px;
+}
+
+.Bio {
+  line-height: 2;
+  font-size: 25px;
+  font: arial;
+  margin-top: -20px;
+  color: rgb(105, 105, 105);
+  shape-outside: url(headshot.jpeg);
+  margin-left: 10px;
+  padding-top: 45px;
+  /* position: top; */
+}
+
+#miniFooter{
+  margin-top:100px;
+  background-color: #49AAA5;
+  position: relative;
+  height:4px;
+}
+
+#footer {
+  background-color: rgb(56, 56, 56);
+  position: relative;
+  height:80px;
+  color: lightgrey;
+  font: arial;
+  font-size: 3px;
+}
+
+.cc {
+  text-align: justify;
+  position: relative;
+  top: 74%;
+  text-align: center;
+  font-size: 14px;
+  text-anchor: middle;
+}

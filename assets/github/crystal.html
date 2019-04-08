@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="crystal.css">
+  <link rel="stylesheet" href="reset.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="command.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Crystal Game</title>
+</head>
+<body class="text-white">
+  <h1 class="align-middle text-4 ml-5 mr-5 mt-5">Alex's Crystal Game</h1>
+      <div class="col-md-6 mx-auto card text-white bg-dark mb-3 p-4 m-5">
+        <blockquote class="blockquote mb-0">
+            <p class="align-middle">You will be given a random number at the start of the game.</p>
+            <p class="align-middle">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your Points score.</p>
+            <p class="align-middle">You win the game by exactly matching your Points score to the random number, you lose the game if your Points score goes above the random number.</p>
+            <p class="align-middle">The value of each crystal is hidden from you until you click on it.</p>
+            <p class="align-middle">Each time when the game starts, the game will change the values of each crystal.</p>
+        </blockquote>
+      </div>
+    <div class="col-md-3 mx-auto text-center scoreboard">
+      <p>Wins: <span id="wins">0</span></p>
+      </p>Losses: <span id="losses">0</span></p>
+    <div class="winning-number">
+          <p class="mx-auto text-center">Winning Number: <span id=winningNumber></span></p>
+        </div>
+        <div class="current-number">
+          <pn class="mx-auto text-center">Current Points: <span id="currentNumber">0</span></p>
+        </div>
+      </div>
+    </div>
+  <div class="container">
+    <div class="align-center row crystals text-center">
+      <a class="col-lg-3 col-md-12 col-sm-12 pulse" id="blue-crystal"><img class="img-responsive" src="blue.png" alt="Blue Crystal"></a>
+      <a class="col-lg-3 col-md-12 col-sm-12 pulse" id="yellow-crystal"><img class="img-responsive" src="pink.png" alt="Pink Crystal"></a>
+      <a class="col-lg-3 col-md-12 col-sm-12 pulse" id="green-crystal"><img class="img-responsive" src="green.png" alt="Green Crystal"></a>
+      <a class="col-lg-3 col-md-12 col-sm-12 pulse" id="orange-crystal"><img class="img-responsive" src="orange.png" alt="Orange Crystal"></a>
+    <div>
+  </div>
+</body>
+</html>

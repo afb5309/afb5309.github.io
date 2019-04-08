@@ -1,0 +1,76 @@
+
+
+body {
+    background-image: url("soccer.png");
+    font-family: 'Luckiest Guy', cursive;
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+h1 {
+    color: white;
+    text-shadow: 4px 4px 4px #000000;
+  }
+
+.button {
+    background-color: #1c87c9;
+    border: none;
+    color: white;
+    padding: 12px 38px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Luckiest Guy', cursive;
+    box-shadow: .5px 2px 4px rgb(43, 43, 43);
+    }
+
+legend {
+    margin: 5 auto;
+}
+
+.title{
+    margin-top: 50px;
+    font-size: 85px;
+
+}
+#begin{
+    margin-top: 70px;
+    font-size: 40px;
+}
+
+#timer {
+    font-size: 33px;
+    color:#e60f32;
+    text-shadow: 2px 2px 2px #000000;
+    
+}
+
+#finish {
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.result {
+    font-size: 32px;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.line {
+    font-size: 26px;
+    color: white;
+    text-shadow: 2px 4px 8px #000000;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.answer {
+    color: #39b2fd;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 22px;
+}
+
+ 
