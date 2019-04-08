@@ -57,12 +57,19 @@
         <div class="container-fluid">
           <div class="row">
               <div class="col-lg-6 mx-auto text-white text-center pl-5">
-                  <p class="text1"><h3 style="color: #5874cf;">Experience</h3>
+                  <h1 class="text1"><h3 style="color: #5874cf;">Experience</h>
                   <h4 class="pb-5" style="font-family: 'League Spartan Bold', arial;">I am a UI/UX designer turned full stack developer who loves making awesome websites.</h4>
                   </p>  
                 </div>
               <div class="col-lg-6 mx-auto text-center">
-                  <img class="iphone1 mb-2" src="assets/img/iphone.png"/>
+                  <img class="iphone1 mb-2 animated fadeIn"  id = "animated-example" src="assets/img/iphone.png"/>
+                  <!-- <button onclick = "myFunction()">Reload page</button> -->
+        
+      <script>
+         function myFunction() {
+            location.reload();
+         }
+      </script>
               </div>
           </div>
       </div>
@@ -87,8 +94,13 @@
                   </p>  
                 </div>
               <div class="col-lg-6 mx-auto text-center">
-                  <img class="macbook mb-2" src="assets/img/macbook.png"/>
+                  <img class="macbook mb-2 animated fadeIn"  id = "animated-example" src="assets/img/macbook.png"/>
               </div>
+              <script>
+                  function myFunction() {
+                     location.onScroll();
+                  }
+               </script>
           </div>
       </div>
     </div>
