@@ -297,6 +297,6 @@
          @media screen and (max-width:768px){
 
           .fixed-bg .fixed-bg-1 .fixed-bg-2 .portfolio-bg {
-            background-size: 900px 100%;}
+            max-width: 768px;}
           
           }
