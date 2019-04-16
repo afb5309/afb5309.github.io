@@ -236,14 +236,14 @@
     }
 
     @media (max-width:550px){  
-        /* .fixed-bg-1 {
+        .fixed-bg-1 {
         background-image: url("../img/education-small.png");
         min-height: 950px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-      } */
+      }
       .macbook{
         height: 220px;
         width: auto;
@@ -294,12 +294,4 @@
             animation-name: fadeIn;
          }
 
-         @media screen and (max-width:768px){
-
-          .fixed-bg .fixed-bg-1 .fixed-bg-2 .portfolio-bg {
-            background-image: url("../img/img1-mobile.png");
-            max-width: 768px;
-            max-height: 1334px;
-          }
-          
-          }
+         
