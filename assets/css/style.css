@@ -42,7 +42,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
   .fixed-bg-1 {
     background-image: url("../img/education-desktop.png");
@@ -50,7 +50,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
   .fixed-bg-2 {
     background-image: url("../img/Wallpaper.png");
@@ -294,7 +294,7 @@
             animation-name: fadeIn;
          }
 
-         @media only screen 
+         /* @media only screen 
     and (device-width : 375px) 
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) { 
@@ -314,4 +314,4 @@
         background-repeat: no-repeat;
         background-size: contain;
     }
-  }
+  } */
