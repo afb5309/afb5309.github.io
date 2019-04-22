@@ -299,21 +299,10 @@
          and (max-device-width : 812px)
          and (-webkit-device-pixel-ratio : 3) { 
       .fixed-bg {
-        background-image: none;
-        background-color: rgb(34, 34, 34);
-        min-height: 950px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        visibility: hidden;
+  
       }
       .fixed-bg-1 {
-        background-image: none;
-        background-color: rgb(34, 34, 34);
-        min-height: 950px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        visibility: hidden;
     }
   }
