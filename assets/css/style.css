@@ -196,7 +196,7 @@
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
       }
       .fixed-bg-1 {
         background-image: url("../img/education-desktop.png");
@@ -204,7 +204,7 @@
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
       }
 }
 @media (max-width:995px){
@@ -214,7 +214,7 @@
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
       }
       .fixed-bg-1 {
         background-image: url("../img/education-ipad.png");
@@ -222,7 +222,7 @@
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
       }
       .macbook{
         height: 300px;
