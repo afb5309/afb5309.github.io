@@ -295,9 +295,9 @@
          }
 
          @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { 
+         and (min-device-width : 375px) 
+         and (max-device-width : 812px)
+         and (-webkit-device-pixel-ratio : 3) { 
       .fixed-bg {
         background-image: none;
         background-color: rgb(34, 34, 34);
