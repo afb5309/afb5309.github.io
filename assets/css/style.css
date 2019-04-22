@@ -37,12 +37,18 @@
   }
   
 .fixed-bg {
-    background-image: url("../img/wallpaper-1.png");
-    min-height: 950px;
+    
+  background: url("../img/wallpaper-1.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 950px;
+    /* min-height: 950px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */ 
   }
   .fixed-bg-1 {
     background-image: url("../img/education-desktop.png");
@@ -191,12 +197,18 @@
       margin-left:250px;
     }
     .fixed-bg {
-        background-image: url("../img/wide-desktop.png");
+      background: url("../img/wide-desktop.png") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      min-height: 950px;
+       /* background-image: url("../img/wide-desktop.png");
         min-height: 950px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
       }
       .fixed-bg-1 {
         background-image: url("../img/education-desktop.png");
@@ -209,12 +221,19 @@
 }
 @media (max-width:995px){
     .fixed-bg {
-        background-image: url("../img/bg1-mobile.png");
+      background: url("../img/bg1-mobile.png") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      min-height: 950px;
+      max-width: 100%;
+      /* background-image: url("../img/bg1-mobile.png");
         min-height: 950px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
       }
       .fixed-bg-1 {
         background-image: url("../img/education-ipad.png");
@@ -294,7 +313,7 @@
             animation-name: fadeIn;
          }
 
-         @media only screen 
+         /* @media only screen 
          and (min-device-width : 375px) 
          and (max-device-width : 812px)
          and (-webkit-device-pixel-ratio : 3) { 
@@ -303,6 +322,6 @@
   
       }
       .fixed-bg-1 {
-        visibility: hidden;
-    }
-  }
+        visibility: hidden; */
+    /* }
+  } */
