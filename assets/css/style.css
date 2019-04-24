@@ -37,29 +37,19 @@
   }
   
 .fixed-bg {
-    background-image: url("../img/wallpaper-1.png");
-    min-height: 950px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .fixed-bg-1 {
-    background-image: url("../img/education-desktop.png");
-    min-height: 650px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .fixed-bg-2 {
-    background-image: url("../img/Wallpaper.png");
-    min-height: 100px;
+    background-image: url("../img/wallpaper.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+  
+  .icons {
+    height: 5%;
+    max-width: 80%;
+    padding-bottom: 50px;
+  }
+
   .portfolio-bg {
     background-image: url("../img/Wallpaper.png");
     min-height: 950px;
@@ -186,29 +176,13 @@
 }
 
 
-@media (min-width:1200px){
+/* @media (min-width:1200px){
     .textOne{
       margin-left:250px;
     }
-    .fixed-bg {
-        background-image: url("../img/wide-desktop.png");
-        min-height: 950px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-      .fixed-bg-1 {
-        background-image: url("../img/education-desktop.png");
-        min-height: 950px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-}
+} */
 @media (max-width:995px){
-    .fixed-bg {
+    /* .fixed-bg {
         background-image: url("../img/bg1-mobile.png");
         min-height: 950px;
         background-attachment: fixed;
@@ -223,7 +197,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-      }
+      } */
       .macbook{
         height: 300px;
         width: auto;
@@ -236,14 +210,14 @@
     }
 
     @media (max-width:550px){  
-        .fixed-bg-1 {
+        /* .fixed-bg-1 {
         background-image: url("../img/education-small.png");
         min-height: 950px;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-      }
+      } */
       .macbook{
         height: 220px;
         width: auto;
@@ -315,3 +289,10 @@
         background-size: contain;
     }
   } */
+
+
+  @media only screen and (max-width : 768px) {
+    body.palette-primary.custom-background {
+    background-size: auto 100%;
+    }
+    }
