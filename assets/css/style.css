@@ -182,22 +182,6 @@
     }
 } */
 @media (max-width:995px){
-    /* .fixed-bg {
-        background-image: url("../img/bg1-mobile.png");
-        min-height: 950px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-      .fixed-bg-1 {
-        background-image: url("../img/education-ipad.png");
-        min-height: 950px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      } */
       .macbook{
         height: 300px;
         width: auto;
@@ -210,14 +194,6 @@
     }
 
     @media (max-width:550px){  
-        /* .fixed-bg-1 {
-        background-image: url("../img/education-small.png");
-        min-height: 950px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      } */
       .macbook{
         height: 220px;
         width: auto;
@@ -254,8 +230,6 @@
          @-webkit-keyframes fadeIn {
             0% {opacity: 0;}
             100% {opacity: 1;}
-            
-            
          }
          
          @keyframes fadeIn {
@@ -267,32 +241,3 @@
             -webkit-animation-name: fadeIn;
             animation-name: fadeIn;
          }
-
-         /* @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { 
-      .fixed-bg {
-        background-image: url("../img/bg1-mobile.png");
-        min-height: 950px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-      .fixed-bg-1 {
-        background-image: url("../img/education-small.png");
-        min-height: 950px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-  } */
-
-
-  @media only screen and (max-width : 768px) {
-    body.palette-primary.custom-background {
-    background-size: auto 100%;
-    }
-    }
