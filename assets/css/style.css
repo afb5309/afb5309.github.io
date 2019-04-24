@@ -205,3 +205,17 @@ animation-fill-mode: both;
   animation-name: fadeIn;
 }
          
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+  
+  .fixed-bg {
+    background-image: url("../img/wallpaper.png");
+    background-attachment: fixed;
+    min-height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+  }
+}
