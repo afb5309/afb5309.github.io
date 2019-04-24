@@ -39,6 +39,7 @@
 .fixed-bg {
     background-image: url("../img/wallpaper.png");
     background-attachment: fixed;
+    min-height: 650px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,7 +52,7 @@
   }
 
   .portfolio-bg {
-    background-image: url("../img/Wallpaper.png");
+    background-image: url("../img/wallpaper.png");
     min-height: 950px;
     background-attachment: fixed;
     background-position: center;
@@ -168,76 +169,39 @@
     width: auto;
     padding-bottom: 50px;
 }
+.animated {
+  background-repeat: no-repeat;
+  background-position: left top;
+  -webkit-animation-duration: 17s;
+  animation-duration: 17s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+}
+.animatedMac {
+background-repeat: no-repeat;
+background-position: left top;
+-webkit-animation-duration: 25s;
+animation-duration: 25s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
 
-.macbook{
-    height: 400px;
-    width: auto;
-    padding-bottom: 50px;
 }
 
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  
 
-/* @media (min-width:1200px){
-    .textOne{
-      margin-left:250px;
-    }
-} */
-@media (max-width:995px){
-      .macbook{
-        height: 300px;
-        width: auto;
-        padding-bottom: 50px;
-    }
-      .text1{
-        margin-top: 3px;
-        margin-bottom: 50px
-    }
-    }
+}
 
-    @media (max-width:550px){  
-      .macbook{
-        height: 220px;
-        width: auto;
-        padding-bottom: 50px;
-        position:relative;
-        justify-content: center;
-    }
-    }
-         .animated {
-            background-image: url(/css/images/logo.png);
-            background-repeat: no-repeat;
-            background-position: left top;
-            /* padding-top:95px; */
-            /* margin-bottom:60px; */
-            -webkit-animation-duration: 17s;
-            animation-duration: 17s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-            
-         }
-         .animatedMac {
-          background-image: url(/css/images/logo.png);
-          background-repeat: no-repeat;
-          background-position: left top;
-          /* padding-top:95px; */
-          /* margin-bottom:60px; */
-          -webkit-animation-duration: 25s;
-          animation-duration: 25s;
-          -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-          
-       }
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
          
-         @-webkit-keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-         }
-         
-         @keyframes fadeIn {
-            0% {opacity: 0;}
-            100% {opacity: 1;}
-         }
-         
-         .fadeIn {
-            -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
-         }
