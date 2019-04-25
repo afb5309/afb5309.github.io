@@ -110,6 +110,21 @@
     color: #ffffff;
   }
   
+  #button button#submit {
+    background: #2b2b2b;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    border-radius: 50px;
+    max-width: 150px;
+    color: #ffffff;
+    margin-top: 24px;
+  }
+  
+  #button button#submit:hover {
+    background: #07c2fc;
+    color: #ffffff;
+  }
   @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   section {
       padding: 60px 0;
