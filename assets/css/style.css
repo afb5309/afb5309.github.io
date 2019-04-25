@@ -45,7 +45,73 @@
     background-repeat: no-repeat;
     background-size: cover; */
   }
+
+  /* Homescreen opening text start */
+  .headline {
+    color: white; 
+    padding: top 550px;  
+    font-family: 'League Spartan Bold', arial; 
+    line-height: 130%; 
+    font-size: 250%;
+    font-weight: bolder;
+  }
   
+
+  @media screen and (min-width : 520px) {
+    .headline {
+      color: white; 
+      padding: top 550px;  
+      font-family: 'League Spartan Bold', arial; 
+      line-height: 110%; 
+      font-size: 90px;
+      font-weight: bolder;
+    }
+  }
+
+  @media screen and (min-width : 772px) {
+    .headline {
+      color: white; 
+      padding: top 550px;  
+      font-family: 'League Spartan Bold', arial; 
+      line-height: 110%; 
+      font-size: 90px;
+      font-weight: bolder;
+    }
+    .state{
+      width: 370px;
+      padding-bottom: 38px;
+  
+    }
+    .penn{
+      width: 370px;
+      padding-bottom: 38px;
+    }
+  }
+  
+  @media screen and (min-width : 1199px) {
+    .headline {
+      color: white; 
+      padding: top 550px;  
+      font-family: 'League Spartan Bold', arial; 
+      line-height: 110%; 
+      font-size: 90px;
+      padding-left: 200px;
+      padding-right: 200px;
+      font-weight: bolder;
+    }
+  }
+
+    /* Homescreen opening text end */
+
+  .state{
+    width: 280px;
+    padding-bottom: 38px;
+
+  }
+  .penn{
+    width: 280px;
+    padding-bottom: 38px;
+  }
   .img-container{
     position: fixed;
     top: 0;
@@ -93,7 +159,7 @@
   #contact input {
     height: 55px;
   }
-  
+
   #contact button#submit {
     background: #2b2b2b;
     padding-top: 12px;
@@ -178,21 +244,13 @@
   }
   }
 
-  .text1{
-      margin-top: 100px;
-  }
-  
-  .text2{
-    margin-top: 50px;
-  }
-
 .firstGroup{
     margin-top: 50px;
 }
 .iphone1{
     height: 400px;
     width: auto;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .animated {
   background-repeat: no-repeat;
@@ -229,27 +287,4 @@ animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-/*          
-@media screen and (min-width : 375px) {
-  .fixed-bg {
-    background-image: url("../img/wallpaper.png");
-    background-attachment: fixed;
-    max-height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-/* and (-webkit-device-pixel-ratio : 3) */
-/* @media screen and (max-width : 812px)
- {
-  
-  .fixed-bg {
-    background-image: url("../img/wallpaper.png");
-    background-attachment: fixed;
-    max-height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-} */
+         
