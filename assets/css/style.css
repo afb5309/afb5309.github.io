@@ -107,7 +107,7 @@
   
   section .section-title {
       text-align: center;
-      color: #1b1b1b;
+      /* color: #1b1b1b; */
       margin-bottom: 50px;
       text-transform: uppercase;
   }
@@ -205,17 +205,26 @@ animation-fill-mode: both;
   animation-name: fadeIn;
 }
          
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px)
-and (-webkit-device-pixel-ratio : 3) {
+@media screen and (min-width : 375px) {
+  .fixed-bg {
+    background-image: url("../img/wallpaper.png");
+    background-attachment: fixed;
+    max-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+/* and (-webkit-device-pixel-ratio : 3) */
+@media screen and (max-width : 812px)
+ {
   
   .fixed-bg {
     background-image: url("../img/wallpaper.png");
     background-attachment: fixed;
-    min-height: 650px;
+    max-height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: cover;
   }
 }
