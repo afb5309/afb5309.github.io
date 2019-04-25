@@ -37,14 +37,24 @@
   }
   
 .fixed-bg {
-    background-image: url("../img/wallpaper.png");
-    background-attachment: fixed;
+    /* background-image: url("../img/wallpaper.png"); */
+    /* background-attachment: fixed;
     min-height: 650px;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
   }
   
+  .img-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .bg-img{
+    min-width: 100vw;
+    height: 100vh;
+  }
   .icons {
     height: 5%;
     max-width: 80%;
@@ -204,7 +214,7 @@ animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-         
+/*          
 @media screen and (min-width : 375px) {
   .fixed-bg {
     background-image: url("../img/wallpaper.png");
@@ -216,7 +226,7 @@ animation-fill-mode: both;
   }
 }
 /* and (-webkit-device-pixel-ratio : 3) */
-@media screen and (max-width : 812px)
+/* @media screen and (max-width : 812px)
  {
   
   .fixed-bg {
@@ -227,4 +237,4 @@ animation-fill-mode: both;
     background-repeat: no-repeat;
     background-size: cover;
   }
-}
+} */
