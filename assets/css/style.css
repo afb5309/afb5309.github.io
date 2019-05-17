@@ -245,6 +245,10 @@ body{
       padding-left: 0;
       padding-bottom: 0px;
       margin-bottom: 10px;
+      }
+      body{
+        overflow-x: hidden;
+      }
   }
   }
 
